@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - VinylPixel</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Banner full-width -->
+    <div class="site-top-banner">
+        <img class="banner-img" src="./imagem/fogo.png" alt="badge">
+        <div class="banner-overlay">
+            <div class="container">
+                <header class="pixel-header banner-header">
+                    <div class="logo">
+                        <div class="pixel-vinyl"></div>
+                        <h1>VinylPixel</h1>
+                    </div>
+                    <nav class="pixel-nav">
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="loja.html" class="active">Loja</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <main class="pixel-main">
+            <!-- Hidden file input for local MP3 upload (used to attach preview to products) -->
+            <input id="audioUploadInput" type="file" accept="audio/*" style="display:none">
+            <div class="page-header">
+                <h2 class="pixel-title">Nossa Loja</h2>
+                <p class="pixel-text">Encontre os melhores discos em vinil</p>
+            </div>
+
+            <div class="shop-controls">
+                <div class="search-box pixel-border">
+                    <input type="text" placeholder="Buscar discos..." class="pixel-input">
+                    <button class="pixel-btn small">🔍</button>
+                </div>
+                <div class="filters">
+                    <select class="pixel-select">
+                        <option>Todos os Gêneros</option>
+                    
+                    </select>
+                    <select class="pixel-select">
+                        <option>Ordenar por</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid shop-grid">
+                <!-- Produtos serão carregados via JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="pixel-btn small">← Anterior</button>
+                <span class="page-info">Página 1 de 3</span>
+                <button class="pixel-btn small">Próxima →</button>
+            </div>
+        </main>
+
+        <footer class="pixel-footer">
+            <p>&copy; 2025 VinylPixel - Todos os direitos reservados</p>
+            <div class="social-links">
+                <span class="pixel-social">📻</span>
+                <span class="pixel-social">🎧</span>
+                <span class="pixel-social">💿</span>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
